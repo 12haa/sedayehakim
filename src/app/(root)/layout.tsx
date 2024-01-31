@@ -12,10 +12,7 @@ export default function MainLayout({
         className=" p-10 bg-[#f9f9f9]
          "
       >
-        <div>
-          <UserDashboard />
-          {children}
-        </div>
+        <div>{children}</div>
       </main>
     </>
   );

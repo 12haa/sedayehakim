@@ -7,7 +7,7 @@ type ButtonProps = {
 const Button = ({ title, bgColor, textColor }: ButtonProps) => {
   return (
     <div
-      className={`rounded-xl  border-2 sm:p-2  max-w-full lg:px-12 bg-#${bgColor}`}
+      className={`rounded-xl  border-2 sm:p-2  max-w-full lg:px-12 bg-${bgColor}-500 `}
     >
       <button className={`text-${textColor}  text-xl `}>
         {title}{" "}

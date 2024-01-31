@@ -141,7 +141,7 @@ export default function Home() {
                 src={slide.imageUrl}
                 alt=""
                 className="w-full h-fit rounded-2xl bg-center bg-cover duration-500
-        object-cover "
+              object-cover "
                 width={70}
                 height={70}
               />

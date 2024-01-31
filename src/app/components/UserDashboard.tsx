@@ -15,7 +15,7 @@ const Dashboard = () => {
   return (
     <div className=" h-screen bg-[#f9f9f9] flex flex-col justify-between   ">
       <div className="flex flex-row  gap-8 items-center justify-between    bg-[#f9f9f9] ">
-        <div className="border-4 border-red-500 w-full max-h-full flex flex-col items-center  ">
+        <div className="  w-full max-h-full flex flex-col items-center  ">
           <div className="w-[90%] rounded-lg border-4  flex flex-row bg-[#e8f1d7] mt-10 h-16 items-center justify-between p-4 ">
             <button className="bg-[#80b022] h-10 p-4 items-center flex rounded-lg px-10 text-white">
               تکمیل پروفایل
@@ -127,7 +127,7 @@ const Dashboard = () => {
               <p className="text-black text-xl mt-2">چیزی پیدا نشد!</p>
             </div>
           </div>
-          <div className="flex flex-row w-[90%] border-4 items-center justify-between  mt-4 px-4 ">
+          <div className="flex flex-row w-[90%] border-4 items-center justify-between  mt-4 px-4 gap-2 ">
             <div className="flex flex-col  flex-1  items-center justify-between gap-2">
               <div className="flex flex-col  items-end  justify-between rounded-md bg-[#94c846] w-full p-4 gap-2">
                 <h2 className="text-white text-2xl font-bold">
