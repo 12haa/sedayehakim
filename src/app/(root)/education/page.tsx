@@ -46,7 +46,7 @@ const page = () => {
                         </div>
                     ))}
 
-                {/* Add Pagination   */}
+                    {/* Add Pagination   */}
 
 
                 </div>

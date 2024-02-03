@@ -6,25 +6,138 @@ import Button from "@/app/components/Button";
 
 const page = () => {
     return <main className="w-full h-screen flex flex-col items-center  bg-[#f9f9f9]">
-        <div className="w-full  bg-[#e8cf75] flex flex-col p-4 items-end gap-4 rounded-md">
+        <div className="w-full  bg-[#e8cf75]  flex flex-col p-4 items-end gap-4 rounded-md ">
             <h2 className="text-4xl font-semibold">ساخت شامپوهای گیاهی</h2>
             <p className="text-xl">صفحه اصلی > اموزش > ساخت شامپوهای گیاهی </p>
 
         </div>
 
-        <div className="w-[80%] flex   gap-5  justify-between   mt-10">
-            <div className="border-4 ">sssssssssssssssssssssssss</div>
+        <div className="w-[80%] flex   gap-5  justify-between  border-4 border-rose-500  mt-10">
+            <div className=" flex flex-col w-[25%]">
+                <div className="flex flex-row items-center justify-center mt-2 bg-white  p-2  gap-6" dir="rtl">
+                    <p className="text-[#836f5c]"> اشتراکی گذاری : </p>
+                    <div className="flex justify-between items-center gap-10">
+                        <Image src="/assets/icons/instagram.svg" alt="instagram" width={26} height={26}/>
+                        <Image src="/assets/icons/sharing.svg" alt="instagram" width={26} height={26}/>
+                        <Image src="/assets/icons/telegram.svg" alt="instagram" width={26} height={26}/>
+                    </div>
 
 
-            <div dir="rtl" className=" flex flex-col w-[70%]       items-center  gap-24 bg-white p-4">
+                </div>
+                <div className="flex flex-col mt-6 gap-4 bg-white ">
+                    <div className="mt-3">
+                        <button className="p-4 px-6 bg-[#8af3cc] rounded-r-lg text-white">
+                            در حال برگزاری
+                        </button>
+                    </div>
+                    <div>
+                        <Image src="/assets/icons/Doctor.svg" width={440} height={300} alt="video"/>
+                    </div>
+                    <div dir="rtl" className="flex flex-col p-4 gap-4">
+                        <p className="font-light text-[#3b3229] tracking-wider leading-10">با خرید این دوره شما از 180
+                            روز پشتیبانی رایگان برخوردار خواهید شد. در صورت نیاز به پشتیبانی بیشتر میتوانید با انتخاب یک
+                            از آیتم ها زمان پشتیبانی خود را افزایش دهید.</p>
+                        <div className="flex gap-4 ">
+                            <p>قیمت :</p>
+                            <p className="text-[#897460] text-[20px] text-stroke store-1">1,000,000</p>
+                            <p className="text-[#053452] text-[20px] text-stroke store-1">900,000 ریال</p>
+                        </div>
+                        <button className="bg-[#c5e021] py-4 rounded-lg">تبت نام در دوره</button>
+
+                    </div>
+
+
+                </div>
+                <div className="mt-4 flex flex-row gap-5 items-center justify-center bg-white p-4" dir="rtl">
+                    <div className=" flex gap-2 items-center justify-center">
+
+                        <Image src="/assets/icons/film.svg" alt="" width={20} height={20}/>
+                        <p>25 قسمت</p>
+                    </div>
+                    <div className="flex gap-2 items-center justify-center">
+                        <Image src="/assets/icons/wall-clock.svg" alt="" width={20} height={20}/>
+                        <p>2:23:11 ساعت</p>
+                    </div>
+
+                </div>
+                <div className="mt-4 flex flex-col gap-5 items-center justify-center bg-white p-2 " dir="rtl">
+                    {[1, 2, 3, 9, 10].map(() => (
+                        <div className="flex border-dashed border-b-2 py-3 gap-10 ">
+
+                            <div className="flex items-center justify-center gap-4" dir="rtl">
+                                <Image src="assets/icons/Location.svg" alt="Location" width={20} height={20}/>
+                                <p className="text-md text-gray-400">نوع دوره :</p>
+                            </div>
+                            <div><p>غیر حضوری</p></div>
+                        </div>
+                    ))}
+                </div>
+                <div className="bg-white flex items-center justify-center gap-5 mt-10" dir="rtl">
+                    <div className="flex gap-10" dir="rtl">
+                        <Image src="/assets/icons/Ellipse_172.svg" alt="Ellipse_172" width={78} height={78}
+                               className="rounded-full"/>
+                        <div className="flex flex-col mt-2">
+                            <h2 className="text-xl">دکتر رضایی</h2>
+                            <p className="text-[#a3a1a1]">عضو انجمن طب سنتی ایران</p>
+                            <p className="-tracking-tight leading-10 text-[18px] text-[#40362d]" dir="rtl ">لورم ایپسوم
+                                متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده ازنامفهوم از
+                                صنعت چاپ و با استفاده از </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="flex items-center justify-center gap-4 flex-col mt-2 p-3 bg-white">
+                    <div className="flex  items-center justify-center gap-2">
+                        <div className="bg-[#e5ae51] h-0.5 px-10 "></div>
+                        <p>کتاب مربوط با این دوره</p>
+                        <div className="bg-[#e5ae51] h-0.5 px-10 "></div>
+
+                    </div>
+                    <Image src="/assets/icons/Qouran.svg" alt=" Qouran.svg" width={301} height={311}/>
+                    <p>اکثیر اعظم 4 جلدی</p>
+                    <button className=" p-4 bg-[#8af3cc] rounded-md w-[80%]">افزودن به سبد خرید</button>
+                </div>
+
+
+                <div className="flex items-center justify-center  flex-col mt-10 p-3 bg-white">
+                    <div className="flex flex-col items-center justify-center">
+
+                        <Image src="/assets/icons/course-certificate.svg" alt=" Qouran.svg" width={201} height={211}
+                               />
+                        <p className="text-[30px] text-[#705f4f]">  گواهی پایان دوره </p>
+                    </div>
+                    <p className=" p-4  w-[100%]" dir="rtl">شما می‌توانید در پایان هر دوره از صدای حکیم گواهی پایان دوره به همراه گواهی تاییدیه دریافت کنید، </p>
+                </div>
+                <div className="flex items-center justify-center  flex-col mt-10 p-3 bg-white" dir="rtl">
+                    <div className="flex w-full justify-start items-center gap-6">
+                        <div className="h-0.5 py-8 px-0.5 rounded-md bg-[#de8303]"></div>
+                        <p className="text-[18px]">تبلیغات</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center">
+
+                        <Image src="/assets/icons/A-Blog-Video-ad-formats.svg" alt=" Qouran.svg" width={201} height={211}
+                        />
+                        <p className="text-[30px] text-[#705f4f]">مکان تبلیغات شما اینجاست </p>
+                    </div>
+                </div>
+
+            </div>
+
+            {/*End Of Left Sidebar*/}
+
+
+            <div dir="rtl"
+                 className=" flex flex-col w-[70%] border-4 h-[350px]       items-center  gap-24 bg-white p-4">
+
                 <div className=" flex   p-4 w-full    items-center justify-between gap-10 ">
-                    <div className=" flex w-full h-full  items-center justify-between   gap-20 ">
+                    <div className=" flex w-full h-full  items-center justify-between   gap-20  ">
                         <div className=" ">
                             <Image src="/assets/Amoozesh.png" alt="amoozesh" className=" " width={400} height={300}/>
                         </div>
-                        <div className="flex flex-col flex-1  ">
+                        <div className="flex flex-col flex-1   ">
 
-                            <div className="flex    items-center justify-between py-2 ">
+                            <div className="flex  border-4    items-center justify-between py-2 ">
                                 <h1 className="text-xl">ساخت شامپوهای گیاهی</h1>
                                 <div className="  flex   gap-1">
                                     {[1, 2, 3, 4, 5].map((item) => (
@@ -35,7 +148,7 @@ const page = () => {
 
                             </div>
                             <div className="w-[100%] "></div>
-                            <div className=" mt-2" dir="rtl">
+                            <div className=" mt-2 " dir="rtl">
                                 <p className=" tracking-wider leading-[40px]  "> لورم ایپسوم متن ساختگی با تولید سادگی
                                     نامفهوم از صنعت
                                     چاپ
@@ -59,10 +172,8 @@ const page = () => {
 
 
             </div>
-
-
         </div>
-        <div className="mt-10 bg-white  ml-[490px]  border-4 flex gap-10 items-center justify-end w-[56%] ">
+        <div className=" bg-white  ml-[490px]  border-4 flex gap-10 items-center justify-end w-[56%] ">
             <p className="text-[#3b3b3b] text-xl mr-2 p-2">توضیحات دوره</p>
             <p className="text-[#3b3b3b] text-xl mr-2 p-2">دوره های مرتبط</p>
             <p className="text-[#3b3b3b] text-xl mr-2 p-2">نظرات کاربران</p>
@@ -321,7 +432,7 @@ const page = () => {
                             <div className="flex items-center justify-evenly mt-1 mr-24 ">
                                 <div className="flex gap-2 items-center justify-center">
                                     <Image src="/assets/icons/like.svg" alt="" width={16} height={16}/>
-                                    <p className="text-[#b7b7b7]">10</p>
+                                    X <p className="text-[#b7b7b7]">10</p>
                                 </div>
                                 <div className="flex gap-2 items-center justify-center">
                                     <Image src="/assets/icons/like.svg" alt="" width={16} height={16}/>
@@ -362,13 +473,17 @@ const page = () => {
 
         </div>
         <div className="flex flex-col w-[56%]  ml-[490px] mt-5 p-2" dir="rtl">
-            <h2 className="text-[31px]"> ثبت نظر  </h2>
+            <h2 className="text-[31px]"> ثبت نظر </h2>
             <div className="border-2 w-[100px] border-[#e8cf75]"></div>
         </div>
         <div className=" bg-white p-10 w-[56%] mt-4 ml-[490px]">
             <div className="flex flex-col items-start justify-start" dir="rtl">
-        <h2>متن پیام</h2>
-                <textarea className="bg-[#fcfcfc] p-4" placeholder=" نام کاربری را وارد کنید" cols={100} rows={8} ></textarea>
+                <h2>متن پیام</h2>
+                <textarea className="bg-[#fcfcfc] p-4" placeholder=" نام کاربری را وارد کنید" cols={100}
+                          rows={8}></textarea>
+                <div className="flex justify-end w-full">
+                    <button className="bg-[#80ae21] p-2 rounded-md px-10 text-white" type="submit">ارسال</button>
+                </div>
             </div>
         </div>
     </main>;

@@ -11,7 +11,7 @@ type NavMenuItems = {
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between flex-row min-sm:flex-row-reverse sm:gap-12  p-4  lg:gap-20 md:w-[100%]     ">
+    <div className="flex items-center justify-between flex-row min-sm:flex-row-reverse sm:gap-12 bg-white  p-4  lg:gap-20 md:w-[100%]     ">
       <div className="flex items-center justify-between flex-row w-full h-full    ">
         <div className="flex items-center justify-center gap-2 h-full ">
           <div className="relative flex items-center justify-center w-full  ">
